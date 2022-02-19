@@ -1,10 +1,10 @@
 ---
-- name: Playbookn para AWX!
+- name: "Prueba 2"
   hosts: all
- 
+
   tasks:
- 
-  - name: Instalamos tree
-    yum: 
-      name: tree
-      state: latest
+    - block:
+      - name: "Instalar tree"
+        yum:
+          name: tree
+          state: latest
