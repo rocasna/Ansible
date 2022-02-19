@@ -1,0 +1,10 @@
+---
+- name: Playbookn para AWX!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Instalamos tree
+    yum: 
+      name: tree
+      state: latest
