@@ -1,0 +1,10 @@
+---
+- name: Nginx
+  hosts: all
+  become: true
+  tasks:
+    - blocks:
+      - name: Reiniciar el servicio de nginx 
+        systemd:
+          name: nginx
+          state: restart

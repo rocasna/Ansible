@@ -1,11 +1,11 @@
 ---
-- name: "Prueba 2"
+- name: nginx
   hosts: all
   become: true
 
   tasks:
     - block:
-      - name: "Instalar tree"
+      - name: Instalar Nginx
         yum:
-          name: tree
+          name: nginx
           state: latest
