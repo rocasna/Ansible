@@ -6,4 +6,4 @@
     - name: Reiniciar el servicio de nginx 
       systemd:
         name: nginx.service
-        state: restart
+        state: restarted
